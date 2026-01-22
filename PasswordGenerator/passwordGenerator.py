@@ -43,7 +43,7 @@ def isPasswordStrong(password, currentStrengthLevel: passwordStrengthLevel) -> p
 
     # For each character in the password
     for char in password:
-        # Check if the characters are a mix of uppercase and lowercase characters
+        # If the characters are a mix of uppercase and lowercase characters
         if char.isupper() or char.islower():
             # Add 1 point to the strength level score
             StrengthLevelScore += 1
@@ -175,4 +175,5 @@ def save_password(password: str, currentStrengthLevel: passwordStrengthLevel ):
 
 
 if __name__ == '__main__':
+
     main()
